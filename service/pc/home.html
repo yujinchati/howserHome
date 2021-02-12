@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="naver-site-verification" content="0cab9586f5e7fe6d92af47ad36b7bbb44b0cac85">
+<meta name="description" content="가구 클라우드 인프라 서비스 하우저 / 가구 포워딩, 보관, 판매, 실측, 배송, AS, 상품관리">
+<meta property="og:title" content="하우저 (HOWSER)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://service.howser.co.kr/home">
+<meta property="og:image" content="http://service.howser.co.kr/resources/home/p/images/howser.png">
+<meta property="og:description" content="가구 클라우드 인프라 서비스 하우저 / 가구 포워딩, 보관, 판매, 실측, 배송, AS, 상품관리">
+<title>하우저 (HOWSER)</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./_css/common.css">
+	<script type="text/javascript"  src="../common/js/require-2.2.0.min.js"></script>
+<script src="../common/js/config.js"></script>
+<script>
+
+ require([ 'jquery','pc/_js/home'],function($, Home) {
+
+		Home.init();
+
+ });
+ </script>
+</head>
+<body>
+	<div id="skip_navi">
+		<a href="#howserBody">본문 바로가기</a>
+		<a href="#howserGnb">주 메뉴 바로가기</a>
+	</div>
+	<div class="dimmed_layer"></div>
+	<div class="wrap_banner">
+		<div class="inner_banner">
+			<a href="https://www.howser.co.kr/group/as" class="link_bnr link_bnr_as" target="_blank">하우저 시공/설치 가구 AS 자세히보기</a>
+			<a href="notice.html?srl=108" class="link_bnr link_bnr_jeju" target="_blank">제주도 시공/설치 서비스 오픈 자세히보기</a>
+			<button type="button" class="btn_bnrclose"><span class="ico_howser ico_bnrclose">배너 안보기</span></button>
+		</div>
+	</div>
+	<div class="layer_viewer">
+		<ul class="list_viewer">
+			<li><img src="images/img_warehousing1.jpg" class="thumb_img" alt=""></li>
+			<li><img src="images/img_warehousing2.jpg" class="thumb_img" alt=""></li>
+			<li><img src="images/img_warehousing3.jpg" class="thumb_img" alt=""></li>
+			<li><img src="images/img_warehousing4.jpg" class="thumb_img" alt=""></li>
+			<li><img src="images/img_warehousing5.jpg" class="thumb_img" alt=""></li>
+			<li><img src="images/img_warehousing6.jpg" class="thumb_img" alt=""></li>
+		</ul>
+		<button type="button" class="ico_howser btn_prev">이전</button>
+		<button type="button" class="ico_howser btn_next">다음</button>
+		<button type="button" class="btn_close"><span class="ico_howser ico_close">이미지뷰어 닫기</span></button>
+	</div>
+	<div id="howserWrap" class="wrap_main">
+	<div id="header" role="banner"></div><!-- //header -->
+		<hr class="hide">
+		<div id="container" role="main" class="cont_main">
+			<div id="mArticle">
+				<h2 id="howserBody" class="screen_out">HOWSER 메인 본문</h2>
+				<div class="area_intro">
+					<p class="desc_intro">좋은 가구만 만들어주세요.<br>그 외 모든 것은 하우저가 만들어갑니다.</p>
+					<a href="#none" class="link_video"><span class="ico_howser ico_play">하우저 서비스 영상보기</span></a>
+					<!-- 동영상 영역 시작 -->
+					<div class="video_layer">
+						<div class="inner_video">
+							<!-- <iframe src="https://www.youtube-nocookie.com/embed/e8_Pu56M9kw?rel=0&amp;showinfo=0" title="하우저 소개 영상" frameborder="0" scrolling="no" class="iframe_video"></iframe> -->
+							<button type="button" class="btn_close"><span class="ico_howser ico_close">동영상 닫기</span></button>
+						</div>
+					</div>
+					<!-- //동영상 영역 끝 -->
+				</div>
+				<div class="area_floating">
+					<dl class="info_contact">
+						<dt>전화문의</dt>
+						<dd class="desc_phone">1800-8335</dd>
+						<dd class="txt_hour">(평일 09시~18시 / 점심시간 제외)</dd>
+						<dt>메일문의</dt>
+						<dd><a href="mailto:contact@howser.co.kr" class="link_mail">contact@howser.co.kr</a></dd>
+					</dl>
+					<a href="/partner" class="link_contact">제휴문의</a>
+					<a href="https://www.instagram.com/howser_official/" target="_blank" title="하우저 인스타그램" class="ico_howser link_instagram">하우저 인스타그램 바로가기</a>
+				</div>
+				<div class="area_tab"><!-- 스크롤 시 영상영역 지나면  "fixed_tab" 추가  -->
+					<div class="inner_tab on_delivery"><!-- 선택된 탭에 맞게 "on_서비스명" 클래스 추가  -->
+						<ul class="tab_menu">
+							<li class="on"><a href="#none" class="img_tab link_delivery"><span class="tit_gnb">시공/설치</span></a></li><!-- 선택 시 클래스 "on" 추가 -->
+							<li><a href="#none" class="img_tab link_forwarding"><span class="tit_gnb">포워딩</span></a></li>
+							<li><a href="#none" class="img_tab link_storage"><span class="tit_gnb">보관(입출재고)</span></a></li>
+							<li><a href="#none" class="img_tab link_shop"><span class="tit_gnb">쇼핑몰관리</span></a></li>
+							<li><a href="#none" class="img_tab link_as"><span class="tit_gnb">가구A/S</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="area_introduce area_delivery">
+					<h3 class="tit_introduce">시공/설치 서비스</h3>
+					<ul class="list_introduce">
+						<li>
+							<dl class="info_detail">
+								<dt>2인 1조 시공/ 1인 시공</dt>
+								<dd>숙련된 전문 가구 시공기사님들의 안전한 시공/설치<br>비전문가 시공으로 인한 사고 위험 최소화 및 고객서비스 향상</dd>
+							</dl>
+						</li>
+						<li class="cl_b">
+							<dl class="info_detail">
+								<dt>포워딩, 보관 연계 서비스</dt>
+								<dd>가구 수입의 경우 좋은 제품을 선택만 하시면, 하우저의 포워딩, 보관,  판매대행, <br>시공서비스를 활용해서 효율적인 사업 진행이 가능</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>스마트 관리 시스템</dt>
+								<dd>가구 시공 완료까지 지속적인 알림톡/해피콜 서비스제공<br>체계적인 고객소통으로 변심을 최소화하고 실시간 진행상황 확인</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>가구 픽업서비스</dt>
+								<dd>효율적인 가격의 찾아가는 가구 픽업서비스로 편리한 물류센터 입고 및 시공</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>깔끔한 마무리/사고 대응</dt>
+								<dd>가구 설치사진 및 고객서명을 실시간 확인 가능, 입고 후 배송사고 발생시 실비 변상</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>전국 시공 서비스</dt>
+								<dd>서울/경인 5일, 지방 10일 이내 규칙적이고 안정적인 시공/설치</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>표준화 된 실측서비스</dt>
+								<dd>실측의뢰서 작성등 메뉴얼에 따른 표준화된 서비스를 제공하여 보다 더 정확한 실측이 가능</dd>
+							</dl>
+						</li>
+						<li class="f_r">
+							<dl class="info_detail">
+								<dt>쉬운 현장상황 파악 및 시간절약</dt>
+								<dd>전송되는 사진과 메모를 통해 현장상황을 파악하기 쉽고 담당 기사님을 통한 실측대응으로 <br>현장방문이 불필요</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="desc_link">
+						<a href="https://play.google.com/store/apps/details?id=kr.co.howser.delivery" target="_blank" class="link_howser">
+							<span class="ico_howser ico_arr">하우저 앱(사장님) 설치</span>
+						</a>
+						<a href="https://play.google.com/store/apps/details?id=kr.co.howser.delivery.driver" target="_blank" class="link_howser">
+							<span class="ico_howser ico_arr">하우저 앱(기사님) 설치</span>
+						</a>
+						<em class="ico_howser emph_app">안드로이드만 가능합니다. (iOS 준비중)</em>
+					</div>
+				</div>
+				<div class="area_introduce area_forwarding">
+					<h3 class="tit_introduce">포워딩 서비스</h3>
+					<ul class="list_introduce">
+						<li>
+							<dl class="info_detail">
+								<dt>가구에 최적화 된 전문 포워딩 서비스</dt>
+								<dd>가구에 최적화된 포워딩 서비스로 불필요한 행정 절차를 최소화 및 관리 효율 향상</dd>
+							</dl>
+						</li>
+						<li class="cl_b">
+							<dl class="info_detail">
+								<dt>Volume Deal</dt>
+								<dd>소규모 물량을 통합하여 Volume Deal을 시행(6개월 단위 선임 비딩)</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>컨테이너 무료 보관 혜택</dt>
+								<dd>추가 비용 없이 1개월간 인천항에 무료 컨테이너 보관 혜택 제공</dd>
+							</dl>
+						</li>
+						<li class="item_forwarding">
+							<dl class="info_detail">
+								<dt>다양한 방식의 수입 서비스 제공</dt>
+								<dd>FOB (Free On Board : 본선 인도), EXW (Ex Works : 공장 인도) 등<br>다양한 조건의 수입 서비스 제공</dd>
+							</dl>
+						</li>
+						<li class="item_forwarding">
+							<dl class="info_detail">
+								<dt>실시간 화물 Tracking</dt>
+								<dd>컨테이너 단위 실시간 위치 및 일자별 진행상황 확인가능</dd>
+							</dl>
+						</li>
+						<li class="item_forwarding_type2">
+							<dl class="info_detail">
+								<dt>업계 최저가 실현</dt>
+								<dd>일원화된 포워딩 서비스 구축을 바탕으로 업계 최저가 실현</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>견적 상담 문의</dt>
+								<dd>담당자 : 포워딩팀 정현아 대리<br>(전화 : 1800-8335(2-7번) / E-mail : <a href="howserforwarding@howser.co.kr">howserforwarding@howser.co.kr</a>)</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="desc_link">
+						<a href="/partner?service=forwarding" class="link_howser forwarding">
+							<span class="ico_howser ico_arr">포워딩 견적문의</span>
+						</a>
+					</div>
+				</div>
+				<div class="area_introduce area_storage">
+					<h3 class="tit_introduce">보관(입출재고) 서비스</h3>
+					<ul class="list_introduce">
+						<li>
+							<dl class="info_detail">
+								<dt>국내 최대의 시설/설비 보유</dt>
+								<dd>7500평 규모(총 3층)의 용인물류센터를 비롯하여 경북지역, 경남지역, 호남지역 물류센터 운영<br>가구 전문 담당자가 화재 및 도난으로부터 안전하게 관리</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>쉽고 편리한 정산</dt>
+								<dd>가구를 보관한 면적만큼만 월단위로 비용지불</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>간편한 입고, 배송 및 재고관리</dt>
+								<dd>시스템을 활용한 간편한 입고, 편리한 배송관리, 효율적인 재고관리 가능</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="desc_link">
+						<a href="#none" class="link_howser">
+							<span class="ico_howser ico_arr">용인물류센터 자세히보기</span>
+						</a>
+					</div>
+				</div>
+				<div class="area_introduce area_shop">
+					<h3 class="tit_introduce">쇼핑몰 관리 서비스<em class="emph_preparing">서비스 준비중</em></h3>
+					<ul class="list_introduce">
+						<li>
+							<dl class="info_detail">
+								<dt>원스톱 서비스</dt>
+								<dd>하우저 쇼핑몰 관리툴을 통해 상품등록 및 주문관리는 물론 가구촬영, 페이지디자인, <br>판매대행까지 한번에 가능</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>경쟁력 향상</dt>
+								<dd>통합된 솔루션 및 하우저의 마케팅 지원을 통한 가구상의 경쟁력을 향상</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>유통망 확대</dt>
+								<dd>쇼핑몰 관리툴을 이용하여 온라인 판매 시작 및 확대 가능</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="area_introduce area_as ">
+					<h3 class="tit_introduce">가구 A/S</h3>
+					<ul class="list_introduce">
+						<li>
+							<dl class="info_detail">
+								<dt>누구나 이용가능한 가구 A/S 서비스</dt>
+								<dd>가구 수리가 필요한 기업, 개인 누구나 이용가능<br>가구 회수-수리-재배송까지 일원화된 서비스 제공</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>A/S 전담팀의 품질 높은 서비스</dt>
+								<dd>가구 전문가로 구성된 전담팀의 숙련된 노하우로 높은 품질의 서비스 제공</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>가구 클라우드 인프라 서비스를 통해 더욱 편리한 A/S</dt>
+								<dd>시스템을 통한 서비스 요청 및 관리 지원</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_detail">
+								<dt>A/S 문의</dt>
+								<dd>담당 : 하우저 AS센터 이경민 이사 <br>(전화 : 010-5228-4073 / E-mail :<a href="mailto:as@howser.co.kr" class="link_mail">as@howser.co.kr</a>)</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="desc_link">
+						<a href="https://www.howser.co.kr/group/as" class="link_howser" target="_blank">
+							<span class="ico_howser ico_arr">A/S 안내 바로가기</span>
+						</a>
+					</div>
+				</div>
+				<div class="area_contact">
+					<ul class="list_contact">
+						<li>
+							<dl class="info_contact">
+								<dt><span class="ico_howser ico_phone">전화문의</span></dt>
+								<dd class="desc_phone">1800-8335</dd>
+								<dd class="txt_hour">(평일 09시~18시 / 점심시간 제외)</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="info_contact">
+								<dt><span class="ico_howser ico_mail">메일문의</span></dt>
+								<dd><a href="mailto:contact@howser.co.kr" class="link_mail">contact@howser.co.kr</a></dd>
+							</dl>
+						</li>
+						<li class="lst"><a href="/partner.htmls" class="link_contact">제휴문의</a></li>
+					</ul>
+				</div>
+			</div><!-- //mArticle -->
+		</div><!-- //container -->
+		<hr class="hide">
+		<div id="footer" role="contentinfo"></div><!-- //footer -->
+		<script type="text/javascript">
+		  require([ 'jquery','common/js/utility'],function($,util) {
+			//top으로 가기
+			$('.link_top').click(function(e){
+				util.target.preventEvent(e);
+				$('.paging_introduce a.img_howser.link_page.on').removeClass('on');
+				$('body,html').animate({scrollTop:0}, '200', 'swing', function() { 
+					
+				});
+			});
+			//FAMILY SITE
+			$(document).on('click','.info_familysite .link_selected',function(e){
+				util.target.preventEvent(e);
+				$('.info_familysite').toggleClass('familysite_open');
+			});
+		});
+		</script>
+	</div><!-- //howserWrap -->
+</body>
+
+</html>

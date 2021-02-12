@@ -1,0 +1,48 @@
+	<div class="inner_header">
+		<h1 class="tit_logo"><a href="home.html" class="img_howser logo_howser">HOWSER</a>&nbsp;</h1>
+		<a href="#none" class="link_menu"><span class="img_howser ico_menu">HOWSER 메인 메뉴 열기, 닫기</span>&nbsp;</a><!-- 클릭 시 howserWrap에 클래스 "menu_on" 추가 -->
+		<div id="howserGnb" role="navigation">
+			<h2 class="screen_out">HOWSER 메인 메뉴</h2>
+			<ul class="gnb_comm">
+				<li><a href="partner.html" class="link_gnb">제휴문의</a></li>
+				<li><a href="notice.html" class="link_gnb">공지사항</a></li>
+				<li><a href="faq.html" class="link_gnb">FAQ</a></li>
+				<li><a href="center.html" class="link_gnb">물류센터 안내</a></li>
+			</ul>
+		</div>
+		<a href="#none" class="link_close">HOWSER 메인 메뉴 닫기</a>
+	</div>
+	<script type="text/javascript">
+	  require([ 'jquery','common/js/utility'],function($,util) {
+				/* GNB */
+				$('.inner_header .link_menu').click(function(e){
+					util.target.preventEvent(e);
+					if($('#howserWrap').hasClass('menu_on')){
+						$('#howserWrap').removeClass('menu_on');
+						if(tabFixed){
+							$('.area_tab').addClass('fixed_tab');
+						}
+						var scrollTop = $(window).scrollTop();
+						if(scrollTop == 0){
+							$("#header").attr("style","position:relative");
+						}
+					}else{
+						$('#howserWrap').addClass('menu_on');
+						$('.area_tab').removeClass('fixed_tab');
+						var scrollTop = $(window).scrollTop();
+						$("#header").attr("style","position:fixed");
+					}
+				});
+				$('.inner_header .link_close').bind("touchstart",function(e){
+					util.target.preventEvent(e);
+					$('#howserWrap').removeClass('menu_on');
+					if(tabFixed){
+						$('.area_tab').addClass('fixed_tab');
+					}
+					var scrollTop = $(window).scrollTop();
+					if(scrollTop == 0){
+						$("#header").attr("style","position:relative");
+					}
+				})
+	  })
+	</script>

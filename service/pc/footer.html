@@ -1,0 +1,42 @@
+	<a href="https://www.instagram.com/howser_official/" target="_blank" title="하우저 인스타그램" class="ico_howser link_instagram">하우저 인스타그램 바로가기</a>
+	<a href="#" class="img_howser link_top">맨위로</a>
+	<h2 class="screen_out">서비스 이용정보</h2>
+	<div class="howser_service">
+		<ul class="list_serviceinfo">
+			<li><a href="company.html" class="link_serviceinfo">회사소개</a></li>
+			<li><a href="notice.html" class="link_serviceinfo">공지사항</a></li>
+			<li><a href="faq.html" class="link_serviceinfo">FAQ</a></li>
+			<li><a href="terms.html" class="link_serviceinfo">이용약관</a></li>
+			<li><a href="privacy.html" class="link_serviceinfo">개인정보처리방침</a></li>
+		</ul>
+	</div>
+	<div class="howser_info">
+		<div class="desc_logo">
+			<a href="home.html" class="img_howser logo_foot">HOWSER</a>
+		</div>
+		<address class="address_howser">
+			<span class="txt_contact">대표이사 : 심준형</span><span class="txt_contact">사업자등록번호 : 766-86-00555</span><span class="txt_contact">고객센터 : 1800-8335<span class="txt_bar">|</span><a href="mailto:help@howser.co.kr" class="link_mail">help@howser.co.kr</a></span><br>
+			<span class="txt_contact">서울센터 : 서울 성동구 성수이로 147 아이에스비즈타워 408호 (주)하우저<br>
+			용인센터 : 경기 용인시 처인구 원삼면 원양로 487 하우저 용인센터<br>
+			양지센터 : 경기 용인시 처인구 양지면 남평로 111-73 아레나스 지하2층  하우저 양지센터<br>
+			</span><br>
+			<span class="txt_copyright">&copy; HOWSER  All rights reserved.</span>
+		</address>
+	</div>
+	<script type="text/javascript">
+  require([ 'jquery','common/js/utility'],function($,util) {
+	//top으로 가기
+	$('.link_top').click(function(e){
+		util.target.preventEvent(e);
+		$('.paging_introduce a.img_howser.link_page.on').removeClass('on');
+		$('body,html').animate({scrollTop:0}, '200', 'swing', function() { 
+			
+		});
+	});
+	//FAMILY SITE
+	$(document).on('click','.info_familysite .link_selected',function(e){
+		util.target.preventEvent(e);
+		$('.info_familysite').toggleClass('familysite_open');
+	});
+});
+</script>

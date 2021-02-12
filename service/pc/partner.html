@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="naver-site-verification" content="0cab9586f5e7fe6d92af47ad36b7bbb44b0cac85">
+<meta name="description" content="가구 클라우드 인프라 서비스 하우저 / 가구 포워딩, 보관, 판매, 실측, 배송, AS, 상품관리">
+<meta property="og:title" content="하우저 (HOWSER)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://service.howser.co.kr/home">
+<meta property="og:image" content="http://service.howser.co.kr/resources/home/p/images/howser.png">
+<meta property="og:description" content="가구 클라우드 인프라 서비스 하우저 / 가구 포워딩, 보관, 판매, 실측, 배송, AS, 상품관리">
+<title>하우저 (HOWSER)</title>
+<link rel="shortcut icon" type="image/x-icon" href="../../p/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./_css/common.css">
+	<script type="text/javascript"  src="../common/js/require-2.2.0.min.js"></script>
+<script src="../common/js/config.js"></script>
+<script>
+
+require([ 'jquery','pc/_js/partner'],function($, partner) {
+
+	 partner.init();
+
+});
+ </script>
+</head>
+<body>
+	<div id="skip_navi">
+		<a href="#howserBody">본문 바로가기</a>
+		<a href="#howserGnb">주 메뉴 바로가기</a>
+	</div>
+	<div id="howserWrap">
+		<div id="header" role="banner"></div><!-- //header -->
+		<hr class="hide">
+		<div id="container" role="main" class="cont_partner">
+			<div id="mArticle">
+				<h2 id="howserBody" class="screen_out">제휴문의 본문</h2>
+				<div class="area_tit">
+					<h3 class="tit_introduce">제휴문의</h3>
+				</div>
+				<p class="desc_info">아래 문의 등록을 해주시면 서비스 소개서와 표준견적서를 보내드리고 담당자가 직접 연락 드리겠습니다.</p>
+				<form id="partnerForm">
+					<fieldset>
+						<legend class="screen_out">제휴문의 폼</legend>
+						<div class="box_input box_service">
+							<strong class="lab_g">서비스</strong>
+							<div class="check_service"><!-- 선택 시 클래스 "serivce_on" 추가 -->
+								<label for="serviceDelivery" class="lab_check"><span class="img_howser"></span>배송</label>
+								<input type="checkbox" id="serviceDelivery" name="serviceDelivery" class="inp_check" value="배송">
+							</div>
+							<div class="check_service">
+								<label for="serviceMeasure" class="lab_check"><span class="img_howser"></span>실측</label>
+								<input type="checkbox" id="serviceMeasure" name="serviceMeasure" class="inp_check" value="실측">
+							</div>
+							<div class="check_service">
+								<label for="userForwarding" class="lab_check lab_forwwarding"><span class="img_howser"></span>포워딩</label>
+								<input type="checkbox" id="userForwarding" name="userForwarding" class="inp_check" value="포워딩">
+							</div>
+							<div class="check_service">
+								<label for="userStorage" class="lab_check"><span class="img_howser"></span>보관</label>
+								<input type="checkbox" id="userStorage" name="userStorage" class="inp_check" value="보관">
+							</div>
+							<em class="emph_guide">문의할 서비스를 선택해주세요. (중복선택가능)</em>
+						</div>
+						<div class="box_input">
+							<label for="userAddress" class="lab_g">지역</label>
+							<div class="input_comm">
+								<span class="txt_placeholder">예) 서울특별시 강남구 역삼동</span>
+								<input type="text" id="userAddress" class="inp_g">
+							</div>
+							<p class="emph_error"></p>
+						</div>
+						<div class="box_input">
+							<strong class="lab_g">업종</strong>
+							<div class="radio_comm"><!-- 선택 시 클래스 "check_on" 추가 -->
+								<label for="companySeller" class="lab_radio">가구판매업체</label>
+								<input type="radio" id="companySeller" name="userIndustry" class="inp_radio">
+							</div>
+							<div class="radio_comm">
+								<label for="companyDriver" class="lab_radio">배송업체</label>
+								<input type="radio" id="companyDriver" name="userIndustry" class="inp_radio">
+							</div>
+							<div class="radio_comm">
+								<label for="companyEtc" class="lab_radio">기타</label>
+								<input type="radio" id="companyEtc" name="userIndustry" class="inp_radio">
+							</div>
+							<em class="emph_guide">업종을 선택해주세요.</em>
+						</div>
+						<div class="box_input">
+							<label for="nameCompany" class="lab_g">상호명</label>
+							<div class="input_comm">
+								<input type="text" id="nameCompany" class="inp_g">
+							</div>
+							<p class="emph_error"></p>
+						</div>
+						<div class="box_input">
+							<label for="nameClient" class="lab_g">문의자명</label>
+							<div class="input_comm">
+								<input type="text" id="nameClient" class="inp_g">
+							</div>
+							<p class="emph_error"></p>
+						</div>
+						<div class="box_input">
+							<label for="userPhone" class="lab_g">회사 전화번호</label>
+							<div class="input_comm">
+								<input type="text" id="userPhone" class="inp_g">
+							</div>
+							<p class="emph_error"></p>
+						</div>
+						<div class="box_input">
+							<label for="userCellphone" class="lab_g">휴대폰</label>
+							<div class="input_comm">
+								<input type="text" id="userCellphone" class="inp_g">
+							</div>
+							<p class="emph_error"></p>
+						</div>
+						<div class="box_input">
+							<label for="userEmail" class="lab_g">이메일주소</label>
+							<div class="input_comm">
+								<input type="text" id="userEmail" class="inp_g">
+							</div>
+							<p class="emph_error"></p>
+						</div>
+						<div class="section_forwarding">
+							<div class="box_input">
+								<label for="departureName" class="lab_g">출발지</label>
+								<div class="input_comm">
+									<span class="txt_placeholder">국가명을 입력해 주세요.</span>
+									<input type="text" id="departureName" class="inp_g">
+								</div>
+								<p class="emph_error"></p>
+							</div>
+							<div class="box_input">
+								<label for="departurePort" class="lab_g">출발항구명</label>
+								<div class="input_comm">
+									<input type="text" id="departurePort" class="inp_g">
+								</div>
+								<p class="emph_error"></p>
+							</div>
+							<div class="box_input">
+								<label for="arrivalPort" class="lab_g">입항항구명</label>
+								<div class="input_comm">
+									<input type="text" id="arrivalPort" class="inp_g">
+								</div>
+								<p class="emph_error"></p>
+							</div>
+							<div class="box_input">
+								<label for="importItem" class="lab_g">수입품목</label>
+								<div class="input_comm">
+									<input type="text" id="importItem" class="inp_g">
+								</div>
+								<p class="emph_error"></p>
+							</div>
+							<div class="box_input">
+								<label for="amountItem" class="lab_g">물량</label>
+								<div class="input_comm">
+									<span class="txt_placeholder">예) 40FT 등</span>
+									<input type="text" id="amountItem" class="inp_g">
+								</div>
+								<p class="emph_error"></p>
+							</div>
+							<div class="box_input">
+								<label for="tradeTerms" class="lab_g">거래조건</label>
+								<div class="input_comm">
+									<span class="txt_placeholder">예) FOB 등</span>
+									<input type="text" id="tradeTerms" class="inp_g">
+								</div>
+								<p class="emph_error"></p>
+							</div>
+							<div class="box_input">
+								<label for="hopeDate" class="lab_g">희망일정</label>
+								<div class="input_comm">
+									<input type="text" id="hopeDate" class="inp_g">
+								</div>
+								<p class="emph_error"></p>
+							</div>
+							<div class="box_input">
+								<label for="freightInbound" class="lab_g">화물입고지</label>
+								<div class="input_comm">
+									<span class="txt_placeholder">국내 화물을 입고할 곳을 입력해 주세요.</span>
+									<input type="text" id="freightInbound" class="inp_g">
+								</div>
+								<p class="emph_error"></p>
+							</div>
+						</div>
+						<div class="box_input">
+							<label for="userEtc" class="lab_g">기타</label>
+							<div class="box_comm">
+								<span class="txt_placeholder">특별히 궁금하신 점 등 자유롭게 입력해 주세요.</span>
+								<textarea class="tf_etc" id="userEtc" name="userEtc" rows="3"></textarea>
+							</div>
+							<p class="emph_error"></p>
+						</div>
+						<div class="box_policy">
+							<strong class="tit_g">개인정보 수집 및 이용에 대한 안내</strong>
+							<div class="info_policy">
+								<strong class="tit_policy">(주)하우저는 문의에 대한 안내를 진행하기 위해 아래와 같은 개인정보를 수집합니다.</strong>
+								<p class="desc_policy">
+								<br>
+								- 수집하는 개인정보: 이름, 휴대폰번호, 전화번호, 이메일주소<br>
+								- 개인정보 수집 목적: 문의에 대한 안내 진행 목적<br>
+								- 개인정보 수집 방법: 수집에 대한 동의 후 문의 등록 시<br>
+								- 보유기간: 담당자의 연락 후 6개월<br>
+								</p>
+							</div>
+							<div class="check_comm">
+								<input type="checkbox" id="inpAgree" class="inp_comm">
+								<label for="inpAgree" class="lab_comm"><span class="img_howser ico_check"></span>위 내용에 동의합니다.</label>
+							</div>
+							<p class="emph_error">'개인정보 수집 및 이용약관'에 대해 동의해 주셔야 문의를 등록할 수 있습니다.</p>
+						</div>
+						<button type="submit" class="btn_comm btn_register">문의등록</button>
+					</fieldset>
+				</form>
+				<!-- 완료 후 영역 시작 -->
+				<div class="area_complete" style="display:none">
+					<p class="desc_txt"><em class="fw_b"></em> 님의 문의가 정상적으로 등록되었습니다.<br>담당자 확인 후 연락 드리겠습니다.</p>
+					<button type="button" class="btn_comm">확인</button>
+				</div>
+				<!-- 완료 후 영역 끝 -->
+			</div><!-- //mArticle -->
+		</div><!-- //container -->
+		<hr class="hide">
+		<div id="footer" role="contentinfo"></div><!-- //footer -->
+	</div><!-- //howserWrap -->
+</body>
+</html>
